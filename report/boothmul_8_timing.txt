@@ -1,0 +1,164 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL_NBIT8
+Version: S-2021.06-SP4
+Date   : Fri Apr 14 09:08:22 2023
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[3] (input port)
+  Endpoint: Y[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  B[3] (in)                                               0.00       0.00 f
+  enc_2/INPUT[2] (ENCODER)                                0.00       0.00 f
+  enc_2/I_0/Z (GTECH_NOT)                                 0.01       0.01 r
+  enc_2/C17/Z (GTECH_AND2)                                0.00       0.01 r
+  enc_2/C16/Z (GTECH_AND2)                                0.00       0.01 r
+  enc_2/C15/Z (GTECH_OR2)                                 0.00       0.01 r
+  enc_2/C14/Z (GTECH_OR2)                                 0.00       0.01 r
+  enc_2/OUTPUT[1] (ENCODER)                               0.00       0.01 r
+  mux_i_1/SEL[1] (MUX51_GENERIC_NBIT16)                   0.00       0.01 r
+  mux_i_1/I_1/Z (GTECH_NOT)                               0.00       0.02 f
+  mux_i_1/C14/Z (GTECH_OR2)                               0.00       0.02 f
+  mux_i_1/C15/Z (GTECH_OR2)                               0.00       0.02 f
+  mux_i_1/I_4/Z (GTECH_NOT)                               0.00       0.02 r
+  mux_i_1/B_2/Z (GTECH_BUF)                               0.00       0.03 r
+  mux_i_1/C58/Z_0 (*SELECT_OP_6.16_6.1_16)                0.00       0.03 r
+  mux_i_1/Y[0] (MUX51_GENERIC_NBIT16)                     0.00       0.03 r
+  add0/B[0] (P4_ADDER_NBIT16_NBIT_PER_BLOCK4)             0.00       0.03 r
+  add0/U1/B[0] (CARRY_GENERATOR_NBIT16_NBIT_PER_BLOCK4)
+                                                          0.00       0.03 r
+  add0/U1/C10/Z (GTECH_AND2)                              0.00       0.03 r
+  add0/U1/C7/Z (GTECH_OR2)                                0.00       0.03 r
+  add0/U1/gblock1_1_1/B (G_block)                         0.00       0.03 r
+  add0/U1/gblock1_1_1/C8/Z (GTECH_AND2)                   0.01       0.04 r
+  add0/U1/gblock1_1_1/C7/Z (GTECH_OR2)                    0.00       0.05 r
+  add0/U1/gblock1_1_1/Gout (G_block)                      0.00       0.05 r
+  add0/U1/gblock1_2_1/B (G_block)                         0.00       0.05 r
+  add0/U1/gblock1_2_1/C8/Z (GTECH_AND2)                   0.00       0.05 r
+  add0/U1/gblock1_2_1/C7/Z (GTECH_OR2)                    0.00       0.05 r
+  add0/U1/gblock1_2_1/Gout (G_block)                      0.00       0.05 r
+  add0/U1/gblock1_3_1/B (G_block)                         0.00       0.05 r
+  add0/U1/gblock1_3_1/C8/Z (GTECH_AND2)                   0.00       0.05 r
+  add0/U1/gblock1_3_1/C7/Z (GTECH_OR2)                    0.00       0.06 r
+  add0/U1/gblock1_3_1/Gout (G_block)                      0.00       0.06 r
+  add0/U1/Co[2] (CARRY_GENERATOR_NBIT16_NBIT_PER_BLOCK4)
+                                                          0.00       0.06 r
+  add0/U2/Ci[2] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS4)      0.00       0.06 r
+  add0/U2/UCSi_3/Ci (CARRY_SEL_N_NBIT4)                   0.00       0.06 r
+  add0/U2/UCSi_3/MUX21/SEL (MUX21_GENERIC_NBIT4)          0.00       0.06 r
+  add0/U2/UCSi_3/MUX21/UIV/A (IV)                         0.00       0.06 r
+  add0/U2/UCSi_3/MUX21/UIV/I_0/Z (GTECH_NOT)              0.00       0.06 f
+  add0/U2/UCSi_3/MUX21/UIV/Y (IV)                         0.00       0.06 f
+  add0/U2/UCSi_3/MUX21/U1_1/B (ND2)                       0.00       0.06 f
+  add0/U2/UCSi_3/MUX21/U1_1/C29/Z (GTECH_AND2)            0.00       0.06 f
+  add0/U2/UCSi_3/MUX21/U1_1/I_0/Z (GTECH_NOT)             0.00       0.07 r
+  add0/U2/UCSi_3/MUX21/U1_1/Y (ND2)                       0.00       0.07 r
+  add0/U2/UCSi_3/MUX21/U3_1/A (ND2)                       0.00       0.07 r
+  add0/U2/UCSi_3/MUX21/U3_1/C29/Z (GTECH_AND2)            0.00       0.07 r
+  add0/U2/UCSi_3/MUX21/U3_1/I_0/Z (GTECH_NOT)             0.00       0.07 f
+  add0/U2/UCSi_3/MUX21/U3_1/Y (ND2)                       0.00       0.07 f
+  add0/U2/UCSi_3/MUX21/Y[1] (MUX21_GENERIC_NBIT4)         0.00       0.07 f
+  add0/U2/UCSi_3/S[1] (CARRY_SEL_N_NBIT4)                 0.00       0.07 f
+  add0/U2/S[9] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS4)       0.00       0.07 f
+  add0/S[9] (P4_ADDER_NBIT16_NBIT_PER_BLOCK4)             0.00       0.07 f
+  add_i_1/A[9] (P4_ADDER_NBIT16_NBIT_PER_BLOCK4)          0.00       0.07 f
+  add_i_1/U1/A[9] (CARRY_GENERATOR_NBIT16_NBIT_PER_BLOCK4)
+                                                          0.00       0.07 f
+  add_i_1/U1/pgnetwork_0/A[9] (PG_network_NBIT16)         0.00       0.07 f
+  add_i_1/U1/pgnetwork_0/C44/Z (GTECH_XOR2)               0.01       0.07 f
+  add_i_1/U1/pgnetwork_0/Pout[9] (PG_network_NBIT16)      0.00       0.07 f
+  add_i_1/U1/pgblock1_1_5/A[1] (PG_block)                 0.00       0.07 f
+  add_i_1/U1/pgblock1_1_5/C9/Z (GTECH_AND2)               0.00       0.08 f
+  add_i_1/U1/pgblock1_1_5/C8/Z (GTECH_OR2)                0.00       0.08 f
+  add_i_1/U1/pgblock1_1_5/PGout[0] (PG_block)             0.00       0.08 f
+  add_i_1/U1/pgblock1_2_3/B[0] (PG_block)                 0.00       0.08 f
+  add_i_1/U1/pgblock1_2_3/C9/Z (GTECH_AND2)               0.00       0.08 f
+  add_i_1/U1/pgblock1_2_3/C8/Z (GTECH_OR2)                0.00       0.08 f
+  add_i_1/U1/pgblock1_2_3/PGout[0] (PG_block)             0.00       0.08 f
+  add_i_1/U1/gblock2_4_3/A[0] (G_block)                   0.00       0.08 f
+  add_i_1/U1/gblock2_4_3/C7/Z (GTECH_OR2)                 0.00       0.09 f
+  add_i_1/U1/gblock2_4_3/Gout (G_block)                   0.00       0.09 f
+  add_i_1/U1/Co[3] (CARRY_GENERATOR_NBIT16_NBIT_PER_BLOCK4)
+                                                          0.00       0.09 f
+  add_i_1/U2/Ci[3] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS4)
+                                                          0.00       0.09 f
+  add_i_1/U2/UCSi_4/Ci (CARRY_SEL_N_NBIT4)                0.00       0.09 f
+  add_i_1/U2/UCSi_4/MUX21/SEL (MUX21_GENERIC_NBIT4)       0.00       0.09 f
+  add_i_1/U2/UCSi_4/MUX21/UIV/A (IV)                      0.00       0.09 f
+  add_i_1/U2/UCSi_4/MUX21/UIV/I_0/Z (GTECH_NOT)           0.00       0.09 r
+  add_i_1/U2/UCSi_4/MUX21/UIV/Y (IV)                      0.00       0.09 r
+  add_i_1/U2/UCSi_4/MUX21/U1_0/B (ND2)                    0.00       0.09 r
+  add_i_1/U2/UCSi_4/MUX21/U1_0/C29/Z (GTECH_AND2)         0.00       0.09 r
+  add_i_1/U2/UCSi_4/MUX21/U1_0/I_0/Z (GTECH_NOT)          0.00       0.09 f
+  add_i_1/U2/UCSi_4/MUX21/U1_0/Y (ND2)                    0.00       0.09 f
+  add_i_1/U2/UCSi_4/MUX21/U3_0/A (ND2)                    0.00       0.09 f
+  add_i_1/U2/UCSi_4/MUX21/U3_0/C29/Z (GTECH_AND2)         0.00       0.10 f
+  add_i_1/U2/UCSi_4/MUX21/U3_0/I_0/Z (GTECH_NOT)          0.00       0.10 r
+  add_i_1/U2/UCSi_4/MUX21/U3_0/Y (ND2)                    0.00       0.10 r
+  add_i_1/U2/UCSi_4/MUX21/Y[0] (MUX21_GENERIC_NBIT4)      0.00       0.10 r
+  add_i_1/U2/UCSi_4/S[0] (CARRY_SEL_N_NBIT4)              0.00       0.10 r
+  add_i_1/U2/S[12] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS4)
+                                                          0.00       0.10 r
+  add_i_1/S[12] (P4_ADDER_NBIT16_NBIT_PER_BLOCK4)         0.00       0.10 r
+  add_i_2/A[12] (P4_ADDER_NBIT16_NBIT_PER_BLOCK4)         0.00       0.10 r
+  add_i_2/U2/A[12] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS4)
+                                                          0.00       0.10 r
+  add_i_2/U2/UCSi_4/A[0] (CARRY_SEL_N_NBIT4)              0.00       0.10 r
+  add_i_2/U2/UCSi_4/RCA0/A[0] (RCAN_NBIT4)                0.00       0.10 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_1/A (FA)                     0.00       0.10 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_1/C12/Z (GTECH_AND2)         0.01       0.10 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_1/C11/Z (GTECH_OR2)          0.00       0.10 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_1/C10/Z (GTECH_OR2)          0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_1/Co (FA)                    0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_2/Ci (FA)                    0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_2/C13/Z (GTECH_AND2)         0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_2/C11/Z (GTECH_OR2)          0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_2/C10/Z (GTECH_OR2)          0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_2/Co (FA)                    0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_3/Ci (FA)                    0.00       0.11 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_3/C13/Z (GTECH_AND2)         0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_3/C11/Z (GTECH_OR2)          0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_3/C10/Z (GTECH_OR2)          0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_3/Co (FA)                    0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_4/Ci (FA)                    0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_4/C8/Z (GTECH_XOR2)          0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/FAI_4/S (FA)                     0.00       0.12 r
+  add_i_2/U2/UCSi_4/RCA0/S[3] (RCAN_NBIT4)                0.00       0.12 r
+  add_i_2/U2/UCSi_4/MUX21/A[3] (MUX21_GENERIC_NBIT4)      0.00       0.12 r
+  add_i_2/U2/UCSi_4/MUX21/U1_3/A (ND2)                    0.00       0.12 r
+  add_i_2/U2/UCSi_4/MUX21/U1_3/C29/Z (GTECH_AND2)         0.00       0.13 r
+  add_i_2/U2/UCSi_4/MUX21/U1_3/I_0/Z (GTECH_NOT)          0.00       0.13 f
+  add_i_2/U2/UCSi_4/MUX21/U1_3/Y (ND2)                    0.00       0.13 f
+  add_i_2/U2/UCSi_4/MUX21/U3_3/A (ND2)                    0.00       0.13 f
+  add_i_2/U2/UCSi_4/MUX21/U3_3/C29/Z (GTECH_AND2)         0.00       0.13 f
+  add_i_2/U2/UCSi_4/MUX21/U3_3/I_0/Z (GTECH_NOT)          0.00       0.13 r
+  add_i_2/U2/UCSi_4/MUX21/U3_3/Y (ND2)                    0.00       0.13 r
+  add_i_2/U2/UCSi_4/MUX21/Y[3] (MUX21_GENERIC_NBIT4)      0.00       0.13 r
+  add_i_2/U2/UCSi_4/S[3] (CARRY_SEL_N_NBIT4)              0.00       0.13 r
+  add_i_2/U2/S[15] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS4)
+                                                          0.00       0.13 r
+  add_i_2/S[15] (P4_ADDER_NBIT16_NBIT_PER_BLOCK4)         0.00       0.13 r
+  Y[15] (out)                                             0.00       0.13 r
+  data arrival time                                                  0.13
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

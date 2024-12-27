@@ -1,0 +1,697 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'BOOTHMUL_NBIT32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL_NBIT32
+Version: S-2021.06-SP4
+Date   : Fri Apr 14 09:55:09 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (input port)
+  Endpoint: Y[63] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT32    5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  sub_106/B[0] (BOOTHMUL_NBIT32_DW01_sub_31)              0.00       0.00 f
+  sub_106/U63/ZN (INV_X1)                                 0.05       0.05 r
+  sub_106/U33/ZN (AND2_X1)                                0.05       0.10 r
+  sub_106/U34/ZN (AND2_X1)                                0.05       0.15 r
+  sub_106/U35/ZN (AND2_X1)                                0.05       0.20 r
+  sub_106/U36/ZN (AND2_X1)                                0.05       0.25 r
+  sub_106/U37/ZN (AND2_X1)                                0.05       0.30 r
+  sub_106/U38/ZN (AND2_X1)                                0.05       0.34 r
+  sub_106/U39/ZN (AND2_X1)                                0.05       0.39 r
+  sub_106/U40/ZN (AND2_X1)                                0.05       0.44 r
+  sub_106/U41/ZN (AND2_X1)                                0.05       0.49 r
+  sub_106/U42/ZN (AND2_X1)                                0.05       0.54 r
+  sub_106/U43/ZN (AND2_X1)                                0.05       0.59 r
+  sub_106/U44/ZN (AND2_X1)                                0.05       0.63 r
+  sub_106/U45/ZN (AND2_X1)                                0.05       0.68 r
+  sub_106/U46/ZN (AND2_X1)                                0.05       0.73 r
+  sub_106/U47/ZN (AND2_X1)                                0.05       0.78 r
+  sub_106/U48/ZN (AND2_X1)                                0.05       0.83 r
+  sub_106/U49/ZN (AND2_X1)                                0.05       0.88 r
+  sub_106/U50/ZN (AND2_X1)                                0.05       0.92 r
+  sub_106/U51/ZN (AND2_X1)                                0.05       0.97 r
+  sub_106/U52/ZN (AND2_X1)                                0.05       1.02 r
+  sub_106/U53/ZN (AND2_X1)                                0.05       1.07 r
+  sub_106/U54/ZN (AND2_X1)                                0.05       1.12 r
+  sub_106/U55/ZN (AND2_X1)                                0.05       1.17 r
+  sub_106/U56/ZN (AND2_X1)                                0.05       1.22 r
+  sub_106/U57/ZN (AND2_X1)                                0.05       1.26 r
+  sub_106/U58/ZN (AND2_X1)                                0.05       1.31 r
+  sub_106/U59/ZN (AND2_X1)                                0.05       1.36 r
+  sub_106/U60/ZN (AND2_X1)                                0.05       1.41 r
+  sub_106/U61/ZN (AND2_X1)                                0.05       1.46 r
+  sub_106/U62/ZN (AND2_X1)                                0.05       1.51 r
+  sub_106/U9/Z (XOR2_X1)                                  0.04       1.55 f
+  sub_106/DIFF[31] (BOOTHMUL_NBIT32_DW01_sub_31)          0.00       1.55 f
+  mux0/C[31] (MUX51_GENERIC_NBIT64_0)                     0.00       1.55 f
+  mux0/U129/ZN (AOI22_X1)                                 0.05       1.60 r
+  mux0/U127/ZN (NAND2_X1)                                 0.06       1.66 f
+  mux0/Y[31] (MUX51_GENERIC_NBIT64_0)                     0.00       1.66 f
+  add0/A[31] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_0)          0.00       1.66 f
+  add0/U1/A[31] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_0)
+                                                          0.00       1.66 f
+  add0/U1/pgnetwork_0/A[31] (PG_network_NBIT64_0)         0.00       1.66 f
+  add0/U1/pgnetwork_0/U40/Z (XOR2_X1)                     0.09       1.75 f
+  add0/U1/pgnetwork_0/Pout[31] (PG_network_NBIT64_0)      0.00       1.75 f
+  add0/U1/pgblock1_1_16/A[1] (PG_block_931)               0.00       1.75 f
+  add0/U1/pgblock1_1_16/U2/ZN (AOI21_X1)                  0.05       1.80 r
+  add0/U1/pgblock1_1_16/U1/ZN (INV_X1)                    0.02       1.82 f
+  add0/U1/pgblock1_1_16/PGout[0] (PG_block_931)           0.00       1.82 f
+  add0/U1/pgblock1_2_8/A[0] (PG_block_908)                0.00       1.82 f
+  add0/U1/pgblock1_2_8/U2/ZN (AOI21_X1)                   0.05       1.87 r
+  add0/U1/pgblock1_2_8/U1/ZN (INV_X1)                     0.02       1.89 f
+  add0/U1/pgblock1_2_8/PGout[0] (PG_block_908)            0.00       1.89 f
+  add0/U1/pgblock1_3_4/A[0] (PG_block_897)                0.00       1.89 f
+  add0/U1/pgblock1_3_4/U2/ZN (AOI21_X1)                   0.05       1.94 r
+  add0/U1/pgblock1_3_4/U1/ZN (INV_X1)                     0.02       1.97 f
+  add0/U1/pgblock1_3_4/PGout[0] (PG_block_897)            0.00       1.97 f
+  add0/U1/pgblock2_4_32_2/A[0] (PG_block_891)             0.00       1.97 f
+  add0/U1/pgblock2_4_32_2/U2/ZN (AOI21_X1)                0.05       2.02 r
+  add0/U1/pgblock2_4_32_2/U1/ZN (INV_X1)                  0.02       2.04 f
+  add0/U1/pgblock2_4_32_2/PGout[0] (PG_block_891)         0.00       2.04 f
+  add0/U1/gblock2_5_8/A[0] (G_block_247)                  0.00       2.04 f
+  add0/U1/gblock2_5_8/U2/ZN (AOI21_X1)                    0.05       2.09 r
+  add0/U1/gblock2_5_8/U1/ZN (INV_X1)                      0.06       2.15 f
+  add0/U1/gblock2_5_8/Gout (G_block_247)                  0.00       2.15 f
+  add0/U1/Co[8] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_0)
+                                                          0.00       2.15 f
+  add0/U2/Ci[8] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_0)
+                                                          0.00       2.15 f
+  add0/U2/UCSi_9/Ci (CARRY_SEL_N_NBIT4_232)               0.00       2.15 f
+  add0/U2/UCSi_9/MUX21/SEL (MUX21_GENERIC_NBIT4_232)      0.00       2.15 f
+  add0/U2/UCSi_9/MUX21/UIV/A (IV_232)                     0.00       2.15 f
+  add0/U2/UCSi_9/MUX21/UIV/U1/ZN (INV_X1)                 0.06       2.21 r
+  add0/U2/UCSi_9/MUX21/UIV/Y (IV_232)                     0.00       2.21 r
+  add0/U2/UCSi_9/MUX21/U1_0/B (ND2_2784)                  0.00       2.21 r
+  add0/U2/UCSi_9/MUX21/U1_0/U1/ZN (NAND2_X1)              0.03       2.24 f
+  add0/U2/UCSi_9/MUX21/U1_0/Y (ND2_2784)                  0.00       2.24 f
+  add0/U2/UCSi_9/MUX21/U3_0/A (ND2_2776)                  0.00       2.24 f
+  add0/U2/UCSi_9/MUX21/U3_0/U1/ZN (NAND2_X1)              0.06       2.30 r
+  add0/U2/UCSi_9/MUX21/U3_0/Y (ND2_2776)                  0.00       2.30 r
+  add0/U2/UCSi_9/MUX21/Y[0] (MUX21_GENERIC_NBIT4_232)     0.00       2.30 r
+  add0/U2/UCSi_9/S[0] (CARRY_SEL_N_NBIT4_232)             0.00       2.30 r
+  add0/U2/S[32] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_0)
+                                                          0.00       2.30 r
+  add0/S[32] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_0)          0.00       2.30 r
+  add_i_1/A[32] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_14)      0.00       2.30 r
+  add_i_1/U2/A[32] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_14)
+                                                          0.00       2.30 r
+  add_i_1/U2/UCSi_9/A[0] (CARRY_SEL_N_NBIT4_216)          0.00       2.30 r
+  add_i_1/U2/UCSi_9/RCA1/A[0] (RCAN_NBIT4_432)            0.00       2.30 r
+  add_i_1/U2/UCSi_9/RCA1/FAI_1/A (FA_1728)                0.00       2.30 r
+  add_i_1/U2/UCSi_9/RCA1/FAI_1/U4/Z (XOR2_X1)             0.05       2.35 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_1/U2/ZN (AOI22_X1)           0.06       2.41 r
+  add_i_1/U2/UCSi_9/RCA1/FAI_1/U1/ZN (INV_X1)             0.03       2.44 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_1/Co (FA_1728)               0.00       2.44 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_2/Ci (FA_1727)               0.00       2.44 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_2/U2/ZN (AOI22_X1)           0.06       2.50 r
+  add_i_1/U2/UCSi_9/RCA1/FAI_2/U1/ZN (INV_X1)             0.03       2.53 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_2/Co (FA_1727)               0.00       2.53 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_3/Ci (FA_1726)               0.00       2.53 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_3/U2/ZN (AOI22_X1)           0.06       2.59 r
+  add_i_1/U2/UCSi_9/RCA1/FAI_3/U1/ZN (INV_X1)             0.03       2.61 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_3/Co (FA_1726)               0.00       2.61 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_4/Ci (FA_1725)               0.00       2.61 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_4/U3/Z (XOR2_X1)             0.07       2.68 f
+  add_i_1/U2/UCSi_9/RCA1/FAI_4/S (FA_1725)                0.00       2.68 f
+  add_i_1/U2/UCSi_9/RCA1/S[3] (RCAN_NBIT4_432)            0.00       2.68 f
+  add_i_1/U2/UCSi_9/MUX21/B[3] (MUX21_GENERIC_NBIT4_216)
+                                                          0.00       2.68 f
+  add_i_1/U2/UCSi_9/MUX21/U2_3/A (ND2_2585)               0.00       2.68 f
+  add_i_1/U2/UCSi_9/MUX21/U2_3/U1/ZN (NAND2_X1)           0.03       2.71 r
+  add_i_1/U2/UCSi_9/MUX21/U2_3/Y (ND2_2585)               0.00       2.71 r
+  add_i_1/U2/UCSi_9/MUX21/U3_3/B (ND2_2581)               0.00       2.71 r
+  add_i_1/U2/UCSi_9/MUX21/U3_3/U1/ZN (NAND2_X1)           0.05       2.76 f
+  add_i_1/U2/UCSi_9/MUX21/U3_3/Y (ND2_2581)               0.00       2.76 f
+  add_i_1/U2/UCSi_9/MUX21/Y[3] (MUX21_GENERIC_NBIT4_216)
+                                                          0.00       2.76 f
+  add_i_1/U2/UCSi_9/S[3] (CARRY_SEL_N_NBIT4_216)          0.00       2.76 f
+  add_i_1/U2/S[35] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_14)
+                                                          0.00       2.76 f
+  add_i_1/S[35] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_14)      0.00       2.76 f
+  add_i_2/A[35] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_13)      0.00       2.76 f
+  add_i_2/U1/A[35] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_13)
+                                                          0.00       2.76 f
+  add_i_2/U1/pgnetwork_0/A[35] (PG_network_NBIT64_13)     0.00       2.76 f
+  add_i_2/U1/pgnetwork_0/U36/Z (XOR2_X1)                  0.09       2.85 f
+  add_i_2/U1/pgnetwork_0/Pout[35] (PG_network_NBIT64_13)
+                                                          0.00       2.85 f
+  add_i_2/U1/pgblock1_1_18/A[1] (PG_block_803)            0.00       2.85 f
+  add_i_2/U1/pgblock1_1_18/U2/ZN (AOI21_X1)               0.05       2.90 r
+  add_i_2/U1/pgblock1_1_18/U1/ZN (INV_X1)                 0.02       2.92 f
+  add_i_2/U1/pgblock1_1_18/PGout[0] (PG_block_803)        0.00       2.92 f
+  add_i_2/U1/pgblock1_2_9/A[0] (PG_block_781)             0.00       2.92 f
+  add_i_2/U1/pgblock1_2_9/U2/ZN (AOI21_X1)                0.05       2.97 r
+  add_i_2/U1/pgblock1_2_9/U1/ZN (INV_X1)                  0.03       3.00 f
+  add_i_2/U1/pgblock1_2_9/PGout[0] (PG_block_781)         0.00       3.00 f
+  add_i_2/U1/gblock2_6_9/A[0] (G_block_212)               0.00       3.00 f
+  add_i_2/U1/gblock2_6_9/U2/ZN (AOI21_X1)                 0.05       3.05 r
+  add_i_2/U1/gblock2_6_9/U1/ZN (INV_X1)                   0.04       3.09 f
+  add_i_2/U1/gblock2_6_9/Gout (G_block_212)               0.00       3.09 f
+  add_i_2/U1/Co[9] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_13)
+                                                          0.00       3.09 f
+  add_i_2/U2/Ci[9] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_13)
+                                                          0.00       3.09 f
+  add_i_2/U2/UCSi_10/Ci (CARRY_SEL_N_NBIT4_199)           0.00       3.09 f
+  add_i_2/U2/UCSi_10/MUX21/SEL (MUX21_GENERIC_NBIT4_199)
+                                                          0.00       3.09 f
+  add_i_2/U2/UCSi_10/MUX21/UIV/A (IV_199)                 0.00       3.09 f
+  add_i_2/U2/UCSi_10/MUX21/UIV/U1/ZN (INV_X1)             0.05       3.14 r
+  add_i_2/U2/UCSi_10/MUX21/UIV/Y (IV_199)                 0.00       3.14 r
+  add_i_2/U2/UCSi_10/MUX21/U1_0/B (ND2_2388)              0.00       3.14 r
+  add_i_2/U2/UCSi_10/MUX21/U1_0/U1/ZN (NAND2_X1)          0.03       3.17 f
+  add_i_2/U2/UCSi_10/MUX21/U1_0/Y (ND2_2388)              0.00       3.17 f
+  add_i_2/U2/UCSi_10/MUX21/U3_0/A (ND2_2380)              0.00       3.17 f
+  add_i_2/U2/UCSi_10/MUX21/U3_0/U1/ZN (NAND2_X1)          0.06       3.23 r
+  add_i_2/U2/UCSi_10/MUX21/U3_0/Y (ND2_2380)              0.00       3.23 r
+  add_i_2/U2/UCSi_10/MUX21/Y[0] (MUX21_GENERIC_NBIT4_199)
+                                                          0.00       3.23 r
+  add_i_2/U2/UCSi_10/S[0] (CARRY_SEL_N_NBIT4_199)         0.00       3.23 r
+  add_i_2/U2/S[36] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_13)
+                                                          0.00       3.23 r
+  add_i_2/S[36] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_13)      0.00       3.23 r
+  add_i_3/A[36] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_12)      0.00       3.23 r
+  add_i_3/U2/A[36] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_12)
+                                                          0.00       3.23 r
+  add_i_3/U2/UCSi_10/A[0] (CARRY_SEL_N_NBIT4_183)         0.00       3.23 r
+  add_i_3/U2/UCSi_10/RCA1/A[0] (RCAN_NBIT4_366)           0.00       3.23 r
+  add_i_3/U2/UCSi_10/RCA1/FAI_1/A (FA_1464)               0.00       3.23 r
+  add_i_3/U2/UCSi_10/RCA1/FAI_1/U4/Z (XOR2_X1)            0.05       3.28 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_1/U2/ZN (AOI22_X1)          0.06       3.34 r
+  add_i_3/U2/UCSi_10/RCA1/FAI_1/U1/ZN (INV_X1)            0.03       3.37 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_1/Co (FA_1464)              0.00       3.37 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_2/Ci (FA_1463)              0.00       3.37 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_2/U2/ZN (AOI22_X1)          0.06       3.43 r
+  add_i_3/U2/UCSi_10/RCA1/FAI_2/U1/ZN (INV_X1)            0.03       3.46 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_2/Co (FA_1463)              0.00       3.46 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_3/Ci (FA_1462)              0.00       3.46 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_3/U2/ZN (AOI22_X1)          0.06       3.52 r
+  add_i_3/U2/UCSi_10/RCA1/FAI_3/U1/ZN (INV_X1)            0.03       3.55 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_3/Co (FA_1462)              0.00       3.55 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_4/Ci (FA_1461)              0.00       3.55 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_4/U3/Z (XOR2_X1)            0.07       3.61 f
+  add_i_3/U2/UCSi_10/RCA1/FAI_4/S (FA_1461)               0.00       3.61 f
+  add_i_3/U2/UCSi_10/RCA1/S[3] (RCAN_NBIT4_366)           0.00       3.61 f
+  add_i_3/U2/UCSi_10/MUX21/B[3] (MUX21_GENERIC_NBIT4_183)
+                                                          0.00       3.61 f
+  add_i_3/U2/UCSi_10/MUX21/U2_3/A (ND2_2189)              0.00       3.61 f
+  add_i_3/U2/UCSi_10/MUX21/U2_3/U1/ZN (NAND2_X1)          0.03       3.64 r
+  add_i_3/U2/UCSi_10/MUX21/U2_3/Y (ND2_2189)              0.00       3.64 r
+  add_i_3/U2/UCSi_10/MUX21/U3_3/B (ND2_2185)              0.00       3.64 r
+  add_i_3/U2/UCSi_10/MUX21/U3_3/U1/ZN (NAND2_X1)          0.05       3.69 f
+  add_i_3/U2/UCSi_10/MUX21/U3_3/Y (ND2_2185)              0.00       3.69 f
+  add_i_3/U2/UCSi_10/MUX21/Y[3] (MUX21_GENERIC_NBIT4_183)
+                                                          0.00       3.69 f
+  add_i_3/U2/UCSi_10/S[3] (CARRY_SEL_N_NBIT4_183)         0.00       3.69 f
+  add_i_3/U2/S[39] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_12)
+                                                          0.00       3.69 f
+  add_i_3/S[39] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_12)      0.00       3.69 f
+  add_i_4/A[39] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_11)      0.00       3.69 f
+  add_i_4/U1/A[39] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_11)
+                                                          0.00       3.69 f
+  add_i_4/U1/pgnetwork_0/A[39] (PG_network_NBIT64_11)     0.00       3.69 f
+  add_i_4/U1/pgnetwork_0/U32/Z (XOR2_X1)                  0.09       3.78 f
+  add_i_4/U1/pgnetwork_0/Pout[39] (PG_network_NBIT64_11)
+                                                          0.00       3.78 f
+  add_i_4/U1/pgblock1_1_20/A[1] (PG_block_675)            0.00       3.78 f
+  add_i_4/U1/pgblock1_1_20/U2/ZN (AOI21_X1)               0.05       3.83 r
+  add_i_4/U1/pgblock1_1_20/U1/ZN (INV_X1)                 0.02       3.85 f
+  add_i_4/U1/pgblock1_1_20/PGout[0] (PG_block_675)        0.00       3.85 f
+  add_i_4/U1/pgblock1_2_10/A[0] (PG_block_654)            0.00       3.85 f
+  add_i_4/U1/pgblock1_2_10/U2/ZN (AOI21_X1)               0.05       3.90 r
+  add_i_4/U1/pgblock1_2_10/U1/ZN (INV_X1)                 0.02       3.93 f
+  add_i_4/U1/pgblock1_2_10/PGout[0] (PG_block_654)        0.00       3.93 f
+  add_i_4/U1/pgblock1_3_5/A[0] (PG_block_644)             0.00       3.93 f
+  add_i_4/U1/pgblock1_3_5/U2/ZN (AOI21_X1)                0.05       3.98 r
+  add_i_4/U1/pgblock1_3_5/U1/ZN (INV_X1)                  0.03       4.01 f
+  add_i_4/U1/pgblock1_3_5/PGout[0] (PG_block_644)         0.00       4.01 f
+  add_i_4/U1/gblock2_6_10/A[0] (G_block_177)              0.00       4.01 f
+  add_i_4/U1/gblock2_6_10/U2/ZN (AOI21_X1)                0.06       4.06 r
+  add_i_4/U1/gblock2_6_10/U1/ZN (INV_X1)                  0.04       4.10 f
+  add_i_4/U1/gblock2_6_10/Gout (G_block_177)              0.00       4.10 f
+  add_i_4/U1/Co[10] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_11)
+                                                          0.00       4.10 f
+  add_i_4/U2/Ci[10] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_11)
+                                                          0.00       4.10 f
+  add_i_4/U2/UCSi_11/Ci (CARRY_SEL_N_NBIT4_166)           0.00       4.10 f
+  add_i_4/U2/UCSi_11/MUX21/SEL (MUX21_GENERIC_NBIT4_166)
+                                                          0.00       4.10 f
+  add_i_4/U2/UCSi_11/MUX21/UIV/A (IV_166)                 0.00       4.10 f
+  add_i_4/U2/UCSi_11/MUX21/UIV/U1/ZN (INV_X1)             0.05       4.15 r
+  add_i_4/U2/UCSi_11/MUX21/UIV/Y (IV_166)                 0.00       4.15 r
+  add_i_4/U2/UCSi_11/MUX21/U1_0/B (ND2_1992)              0.00       4.15 r
+  add_i_4/U2/UCSi_11/MUX21/U1_0/U1/ZN (NAND2_X1)          0.03       4.18 f
+  add_i_4/U2/UCSi_11/MUX21/U1_0/Y (ND2_1992)              0.00       4.18 f
+  add_i_4/U2/UCSi_11/MUX21/U3_0/A (ND2_1984)              0.00       4.18 f
+  add_i_4/U2/UCSi_11/MUX21/U3_0/U1/ZN (NAND2_X1)          0.06       4.24 r
+  add_i_4/U2/UCSi_11/MUX21/U3_0/Y (ND2_1984)              0.00       4.24 r
+  add_i_4/U2/UCSi_11/MUX21/Y[0] (MUX21_GENERIC_NBIT4_166)
+                                                          0.00       4.24 r
+  add_i_4/U2/UCSi_11/S[0] (CARRY_SEL_N_NBIT4_166)         0.00       4.24 r
+  add_i_4/U2/S[40] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_11)
+                                                          0.00       4.24 r
+  add_i_4/S[40] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_11)      0.00       4.24 r
+  add_i_5/A[40] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_10)      0.00       4.24 r
+  add_i_5/U2/A[40] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_10)
+                                                          0.00       4.24 r
+  add_i_5/U2/UCSi_11/A[0] (CARRY_SEL_N_NBIT4_150)         0.00       4.24 r
+  add_i_5/U2/UCSi_11/RCA1/A[0] (RCAN_NBIT4_300)           0.00       4.24 r
+  add_i_5/U2/UCSi_11/RCA1/FAI_1/A (FA_1200)               0.00       4.24 r
+  add_i_5/U2/UCSi_11/RCA1/FAI_1/U4/Z (XOR2_X1)            0.05       4.29 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_1/U2/ZN (AOI22_X1)          0.06       4.35 r
+  add_i_5/U2/UCSi_11/RCA1/FAI_1/U1/ZN (INV_X1)            0.03       4.38 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_1/Co (FA_1200)              0.00       4.38 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_2/Ci (FA_1199)              0.00       4.38 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_2/U2/ZN (AOI22_X1)          0.06       4.44 r
+  add_i_5/U2/UCSi_11/RCA1/FAI_2/U1/ZN (INV_X1)            0.03       4.46 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_2/Co (FA_1199)              0.00       4.46 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_3/Ci (FA_1198)              0.00       4.46 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_3/U2/ZN (AOI22_X1)          0.06       4.53 r
+  add_i_5/U2/UCSi_11/RCA1/FAI_3/U1/ZN (INV_X1)            0.03       4.55 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_3/Co (FA_1198)              0.00       4.55 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_4/Ci (FA_1197)              0.00       4.55 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_4/U3/Z (XOR2_X1)            0.07       4.62 f
+  add_i_5/U2/UCSi_11/RCA1/FAI_4/S (FA_1197)               0.00       4.62 f
+  add_i_5/U2/UCSi_11/RCA1/S[3] (RCAN_NBIT4_300)           0.00       4.62 f
+  add_i_5/U2/UCSi_11/MUX21/B[3] (MUX21_GENERIC_NBIT4_150)
+                                                          0.00       4.62 f
+  add_i_5/U2/UCSi_11/MUX21/U2_3/A (ND2_1793)              0.00       4.62 f
+  add_i_5/U2/UCSi_11/MUX21/U2_3/U1/ZN (NAND2_X1)          0.03       4.65 r
+  add_i_5/U2/UCSi_11/MUX21/U2_3/Y (ND2_1793)              0.00       4.65 r
+  add_i_5/U2/UCSi_11/MUX21/U3_3/B (ND2_1789)              0.00       4.65 r
+  add_i_5/U2/UCSi_11/MUX21/U3_3/U1/ZN (NAND2_X1)          0.05       4.70 f
+  add_i_5/U2/UCSi_11/MUX21/U3_3/Y (ND2_1789)              0.00       4.70 f
+  add_i_5/U2/UCSi_11/MUX21/Y[3] (MUX21_GENERIC_NBIT4_150)
+                                                          0.00       4.70 f
+  add_i_5/U2/UCSi_11/S[3] (CARRY_SEL_N_NBIT4_150)         0.00       4.70 f
+  add_i_5/U2/S[43] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_10)
+                                                          0.00       4.70 f
+  add_i_5/S[43] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_10)      0.00       4.70 f
+  add_i_6/A[43] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_9)       0.00       4.70 f
+  add_i_6/U1/A[43] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_9)
+                                                          0.00       4.70 f
+  add_i_6/U1/pgnetwork_0/A[43] (PG_network_NBIT64_9)      0.00       4.70 f
+  add_i_6/U1/pgnetwork_0/U27/Z (XOR2_X1)                  0.09       4.79 f
+  add_i_6/U1/pgnetwork_0/Pout[43] (PG_network_NBIT64_9)
+                                                          0.00       4.79 f
+  add_i_6/U1/pgblock1_1_22/A[1] (PG_block_547)            0.00       4.79 f
+  add_i_6/U1/pgblock1_1_22/U2/ZN (AOI21_X1)               0.05       4.84 r
+  add_i_6/U1/pgblock1_1_22/U1/ZN (INV_X1)                 0.02       4.86 f
+  add_i_6/U1/pgblock1_1_22/PGout[0] (PG_block_547)        0.00       4.86 f
+  add_i_6/U1/pgblock1_2_11/A[0] (PG_block_527)            0.00       4.86 f
+  add_i_6/U1/pgblock1_2_11/U2/ZN (AOI21_X1)               0.05       4.91 r
+  add_i_6/U1/pgblock1_2_11/U1/ZN (INV_X1)                 0.03       4.94 f
+  add_i_6/U1/pgblock1_2_11/PGout[0] (PG_block_527)        0.00       4.94 f
+  add_i_6/U1/pgblock2_4_44_3/A[0] (PG_block_512)          0.00       4.94 f
+  add_i_6/U1/pgblock2_4_44_3/U2/ZN (AOI21_X1)             0.05       4.99 r
+  add_i_6/U1/pgblock2_4_44_3/U1/ZN (INV_X1)               0.02       5.01 f
+  add_i_6/U1/pgblock2_4_44_3/PGout[0] (PG_block_512)      0.00       5.01 f
+  add_i_6/U1/gblock2_6_11/A[0] (G_block_142)              0.00       5.01 f
+  add_i_6/U1/gblock2_6_11/U2/ZN (AOI21_X1)                0.05       5.07 r
+  add_i_6/U1/gblock2_6_11/U1/ZN (INV_X1)                  0.04       5.10 f
+  add_i_6/U1/gblock2_6_11/Gout (G_block_142)              0.00       5.10 f
+  add_i_6/U1/Co[11] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_9)
+                                                          0.00       5.10 f
+  add_i_6/U2/Ci[11] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_9)
+                                                          0.00       5.10 f
+  add_i_6/U2/UCSi_12/Ci (CARRY_SEL_N_NBIT4_133)           0.00       5.10 f
+  add_i_6/U2/UCSi_12/MUX21/SEL (MUX21_GENERIC_NBIT4_133)
+                                                          0.00       5.10 f
+  add_i_6/U2/UCSi_12/MUX21/UIV/A (IV_133)                 0.00       5.10 f
+  add_i_6/U2/UCSi_12/MUX21/UIV/U1/ZN (INV_X1)             0.05       5.15 r
+  add_i_6/U2/UCSi_12/MUX21/UIV/Y (IV_133)                 0.00       5.15 r
+  add_i_6/U2/UCSi_12/MUX21/U1_0/B (ND2_1596)              0.00       5.15 r
+  add_i_6/U2/UCSi_12/MUX21/U1_0/U1/ZN (NAND2_X1)          0.03       5.18 f
+  add_i_6/U2/UCSi_12/MUX21/U1_0/Y (ND2_1596)              0.00       5.18 f
+  add_i_6/U2/UCSi_12/MUX21/U3_0/A (ND2_1588)              0.00       5.18 f
+  add_i_6/U2/UCSi_12/MUX21/U3_0/U1/ZN (NAND2_X1)          0.06       5.24 r
+  add_i_6/U2/UCSi_12/MUX21/U3_0/Y (ND2_1588)              0.00       5.24 r
+  add_i_6/U2/UCSi_12/MUX21/Y[0] (MUX21_GENERIC_NBIT4_133)
+                                                          0.00       5.24 r
+  add_i_6/U2/UCSi_12/S[0] (CARRY_SEL_N_NBIT4_133)         0.00       5.24 r
+  add_i_6/U2/S[44] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_9)
+                                                          0.00       5.24 r
+  add_i_6/S[44] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_9)       0.00       5.24 r
+  add_i_7/A[44] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_8)       0.00       5.24 r
+  add_i_7/U2/A[44] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_8)
+                                                          0.00       5.24 r
+  add_i_7/U2/UCSi_12/A[0] (CARRY_SEL_N_NBIT4_117)         0.00       5.24 r
+  add_i_7/U2/UCSi_12/RCA1/A[0] (RCAN_NBIT4_234)           0.00       5.24 r
+  add_i_7/U2/UCSi_12/RCA1/FAI_1/A (FA_936)                0.00       5.24 r
+  add_i_7/U2/UCSi_12/RCA1/FAI_1/U4/Z (XOR2_X1)            0.05       5.29 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_1/U2/ZN (AOI22_X1)          0.06       5.35 r
+  add_i_7/U2/UCSi_12/RCA1/FAI_1/U1/ZN (INV_X1)            0.03       5.38 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_1/Co (FA_936)               0.00       5.38 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_2/Ci (FA_935)               0.00       5.38 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_2/U2/ZN (AOI22_X1)          0.06       5.44 r
+  add_i_7/U2/UCSi_12/RCA1/FAI_2/U1/ZN (INV_X1)            0.03       5.47 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_2/Co (FA_935)               0.00       5.47 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_3/Ci (FA_934)               0.00       5.47 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_3/U2/ZN (AOI22_X1)          0.06       5.53 r
+  add_i_7/U2/UCSi_12/RCA1/FAI_3/U1/ZN (INV_X1)            0.03       5.56 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_3/Co (FA_934)               0.00       5.56 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_4/Ci (FA_933)               0.00       5.56 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_4/U3/Z (XOR2_X1)            0.07       5.63 f
+  add_i_7/U2/UCSi_12/RCA1/FAI_4/S (FA_933)                0.00       5.63 f
+  add_i_7/U2/UCSi_12/RCA1/S[3] (RCAN_NBIT4_234)           0.00       5.63 f
+  add_i_7/U2/UCSi_12/MUX21/B[3] (MUX21_GENERIC_NBIT4_117)
+                                                          0.00       5.63 f
+  add_i_7/U2/UCSi_12/MUX21/U2_3/A (ND2_1397)              0.00       5.63 f
+  add_i_7/U2/UCSi_12/MUX21/U2_3/U1/ZN (NAND2_X1)          0.03       5.66 r
+  add_i_7/U2/UCSi_12/MUX21/U2_3/Y (ND2_1397)              0.00       5.66 r
+  add_i_7/U2/UCSi_12/MUX21/U3_3/B (ND2_1393)              0.00       5.66 r
+  add_i_7/U2/UCSi_12/MUX21/U3_3/U1/ZN (NAND2_X1)          0.05       5.70 f
+  add_i_7/U2/UCSi_12/MUX21/U3_3/Y (ND2_1393)              0.00       5.70 f
+  add_i_7/U2/UCSi_12/MUX21/Y[3] (MUX21_GENERIC_NBIT4_117)
+                                                          0.00       5.70 f
+  add_i_7/U2/UCSi_12/S[3] (CARRY_SEL_N_NBIT4_117)         0.00       5.70 f
+  add_i_7/U2/S[47] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_8)
+                                                          0.00       5.70 f
+  add_i_7/S[47] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_8)       0.00       5.70 f
+  add_i_8/A[47] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_7)       0.00       5.70 f
+  add_i_8/U1/A[47] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_7)
+                                                          0.00       5.70 f
+  add_i_8/U1/pgnetwork_0/A[47] (PG_network_NBIT64_7)      0.00       5.70 f
+  add_i_8/U1/pgnetwork_0/U23/Z (XOR2_X1)                  0.09       5.79 f
+  add_i_8/U1/pgnetwork_0/Pout[47] (PG_network_NBIT64_7)
+                                                          0.00       5.79 f
+  add_i_8/U1/pgblock1_1_24/A[1] (PG_block_419)            0.00       5.79 f
+  add_i_8/U1/pgblock1_1_24/U2/ZN (AOI21_X1)               0.05       5.84 r
+  add_i_8/U1/pgblock1_1_24/U1/ZN (INV_X1)                 0.02       5.86 f
+  add_i_8/U1/pgblock1_1_24/PGout[0] (PG_block_419)        0.00       5.86 f
+  add_i_8/U1/pgblock1_2_12/A[0] (PG_block_400)            0.00       5.86 f
+  add_i_8/U1/pgblock1_2_12/U2/ZN (AOI21_X1)               0.05       5.92 r
+  add_i_8/U1/pgblock1_2_12/U1/ZN (INV_X1)                 0.02       5.94 f
+  add_i_8/U1/pgblock1_2_12/PGout[0] (PG_block_400)        0.00       5.94 f
+  add_i_8/U1/pgblock1_3_6/A[0] (PG_block_391)             0.00       5.94 f
+  add_i_8/U1/pgblock1_3_6/U2/ZN (AOI21_X1)                0.05       5.99 r
+  add_i_8/U1/pgblock1_3_6/U1/ZN (INV_X1)                  0.02       6.01 f
+  add_i_8/U1/pgblock1_3_6/PGout[0] (PG_block_391)         0.00       6.01 f
+  add_i_8/U1/pgblock2_4_48_3/A[0] (PG_block_385)          0.00       6.01 f
+  add_i_8/U1/pgblock2_4_48_3/U2/ZN (AOI21_X1)             0.05       6.06 r
+  add_i_8/U1/pgblock2_4_48_3/U1/ZN (INV_X1)               0.04       6.10 f
+  add_i_8/U1/pgblock2_4_48_3/PGout[0] (PG_block_385)      0.00       6.10 f
+  add_i_8/U1/gblock2_6_12/A[0] (G_block_107)              0.00       6.10 f
+  add_i_8/U1/gblock2_6_12/U2/ZN (AOI21_X1)                0.06       6.16 r
+  add_i_8/U1/gblock2_6_12/U1/ZN (INV_X1)                  0.04       6.19 f
+  add_i_8/U1/gblock2_6_12/Gout (G_block_107)              0.00       6.19 f
+  add_i_8/U1/Co[12] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_7)
+                                                          0.00       6.19 f
+  add_i_8/U2/Ci[12] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_7)
+                                                          0.00       6.19 f
+  add_i_8/U2/UCSi_13/Ci (CARRY_SEL_N_NBIT4_100)           0.00       6.19 f
+  add_i_8/U2/UCSi_13/MUX21/SEL (MUX21_GENERIC_NBIT4_100)
+                                                          0.00       6.19 f
+  add_i_8/U2/UCSi_13/MUX21/UIV/A (IV_100)                 0.00       6.19 f
+  add_i_8/U2/UCSi_13/MUX21/UIV/U1/ZN (INV_X1)             0.05       6.24 r
+  add_i_8/U2/UCSi_13/MUX21/UIV/Y (IV_100)                 0.00       6.24 r
+  add_i_8/U2/UCSi_13/MUX21/U1_0/B (ND2_1200)              0.00       6.24 r
+  add_i_8/U2/UCSi_13/MUX21/U1_0/U1/ZN (NAND2_X1)          0.03       6.27 f
+  add_i_8/U2/UCSi_13/MUX21/U1_0/Y (ND2_1200)              0.00       6.27 f
+  add_i_8/U2/UCSi_13/MUX21/U3_0/A (ND2_1192)              0.00       6.27 f
+  add_i_8/U2/UCSi_13/MUX21/U3_0/U1/ZN (NAND2_X1)          0.06       6.33 r
+  add_i_8/U2/UCSi_13/MUX21/U3_0/Y (ND2_1192)              0.00       6.33 r
+  add_i_8/U2/UCSi_13/MUX21/Y[0] (MUX21_GENERIC_NBIT4_100)
+                                                          0.00       6.33 r
+  add_i_8/U2/UCSi_13/S[0] (CARRY_SEL_N_NBIT4_100)         0.00       6.33 r
+  add_i_8/U2/S[48] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_7)
+                                                          0.00       6.33 r
+  add_i_8/S[48] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_7)       0.00       6.33 r
+  add_i_9/A[48] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_6)       0.00       6.33 r
+  add_i_9/U2/A[48] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_6)
+                                                          0.00       6.33 r
+  add_i_9/U2/UCSi_13/A[0] (CARRY_SEL_N_NBIT4_84)          0.00       6.33 r
+  add_i_9/U2/UCSi_13/RCA1/A[0] (RCAN_NBIT4_168)           0.00       6.33 r
+  add_i_9/U2/UCSi_13/RCA1/FAI_1/A (FA_672)                0.00       6.33 r
+  add_i_9/U2/UCSi_13/RCA1/FAI_1/U4/Z (XOR2_X1)            0.05       6.38 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_1/U2/ZN (AOI22_X1)          0.06       6.44 r
+  add_i_9/U2/UCSi_13/RCA1/FAI_1/U1/ZN (INV_X1)            0.03       6.47 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_1/Co (FA_672)               0.00       6.47 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_2/Ci (FA_671)               0.00       6.47 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_2/U2/ZN (AOI22_X1)          0.06       6.53 r
+  add_i_9/U2/UCSi_13/RCA1/FAI_2/U1/ZN (INV_X1)            0.03       6.56 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_2/Co (FA_671)               0.00       6.56 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_3/Ci (FA_670)               0.00       6.56 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_3/U2/ZN (AOI22_X1)          0.06       6.62 r
+  add_i_9/U2/UCSi_13/RCA1/FAI_3/U1/ZN (INV_X1)            0.03       6.65 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_3/Co (FA_670)               0.00       6.65 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_4/Ci (FA_669)               0.00       6.65 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_4/U3/Z (XOR2_X1)            0.07       6.72 f
+  add_i_9/U2/UCSi_13/RCA1/FAI_4/S (FA_669)                0.00       6.72 f
+  add_i_9/U2/UCSi_13/RCA1/S[3] (RCAN_NBIT4_168)           0.00       6.72 f
+  add_i_9/U2/UCSi_13/MUX21/B[3] (MUX21_GENERIC_NBIT4_84)
+                                                          0.00       6.72 f
+  add_i_9/U2/UCSi_13/MUX21/U2_3/A (ND2_1001)              0.00       6.72 f
+  add_i_9/U2/UCSi_13/MUX21/U2_3/U1/ZN (NAND2_X1)          0.03       6.75 r
+  add_i_9/U2/UCSi_13/MUX21/U2_3/Y (ND2_1001)              0.00       6.75 r
+  add_i_9/U2/UCSi_13/MUX21/U3_3/B (ND2_997)               0.00       6.75 r
+  add_i_9/U2/UCSi_13/MUX21/U3_3/U1/ZN (NAND2_X1)          0.05       6.80 f
+  add_i_9/U2/UCSi_13/MUX21/U3_3/Y (ND2_997)               0.00       6.80 f
+  add_i_9/U2/UCSi_13/MUX21/Y[3] (MUX21_GENERIC_NBIT4_84)
+                                                          0.00       6.80 f
+  add_i_9/U2/UCSi_13/S[3] (CARRY_SEL_N_NBIT4_84)          0.00       6.80 f
+  add_i_9/U2/S[51] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_6)
+                                                          0.00       6.80 f
+  add_i_9/S[51] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_6)       0.00       6.80 f
+  add_i_10/A[51] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_5)      0.00       6.80 f
+  add_i_10/U1/A[51] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_5)
+                                                          0.00       6.80 f
+  add_i_10/U1/pgnetwork_0/A[51] (PG_network_NBIT64_5)     0.00       6.80 f
+  add_i_10/U1/pgnetwork_0/U18/Z (XOR2_X1)                 0.09       6.89 f
+  add_i_10/U1/pgnetwork_0/Pout[51] (PG_network_NBIT64_5)
+                                                          0.00       6.89 f
+  add_i_10/U1/pgblock1_1_26/A[1] (PG_block_291)           0.00       6.89 f
+  add_i_10/U1/pgblock1_1_26/U2/ZN (AOI21_X1)              0.05       6.93 r
+  add_i_10/U1/pgblock1_1_26/U1/ZN (INV_X1)                0.02       6.96 f
+  add_i_10/U1/pgblock1_1_26/PGout[0] (PG_block_291)       0.00       6.96 f
+  add_i_10/U1/pgblock1_2_13/A[0] (PG_block_273)           0.00       6.96 f
+  add_i_10/U1/pgblock1_2_13/U2/ZN (AOI21_X1)              0.05       7.01 r
+  add_i_10/U1/pgblock1_2_13/U1/ZN (INV_X1)                0.03       7.03 f
+  add_i_10/U1/pgblock1_2_13/PGout[0] (PG_block_273)       0.00       7.03 f
+  add_i_10/U1/pgblock2_5_52_2/A[0] (PG_block_256)         0.00       7.03 f
+  add_i_10/U1/pgblock2_5_52_2/U2/ZN (AOI21_X1)            0.05       7.09 r
+  add_i_10/U1/pgblock2_5_52_2/U1/ZN (INV_X1)              0.02       7.11 f
+  add_i_10/U1/pgblock2_5_52_2/PGout[0] (PG_block_256)     0.00       7.11 f
+  add_i_10/U1/gblock2_6_13/A[0] (G_block_72)              0.00       7.11 f
+  add_i_10/U1/gblock2_6_13/U2/ZN (AOI21_X1)               0.05       7.16 r
+  add_i_10/U1/gblock2_6_13/U1/ZN (INV_X1)                 0.04       7.20 f
+  add_i_10/U1/gblock2_6_13/Gout (G_block_72)              0.00       7.20 f
+  add_i_10/U1/Co[13] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_5)
+                                                          0.00       7.20 f
+  add_i_10/U2/Ci[13] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_5)
+                                                          0.00       7.20 f
+  add_i_10/U2/UCSi_14/Ci (CARRY_SEL_N_NBIT4_67)           0.00       7.20 f
+  add_i_10/U2/UCSi_14/MUX21/SEL (MUX21_GENERIC_NBIT4_67)
+                                                          0.00       7.20 f
+  add_i_10/U2/UCSi_14/MUX21/UIV/A (IV_67)                 0.00       7.20 f
+  add_i_10/U2/UCSi_14/MUX21/UIV/U1/ZN (INV_X1)            0.05       7.24 r
+  add_i_10/U2/UCSi_14/MUX21/UIV/Y (IV_67)                 0.00       7.24 r
+  add_i_10/U2/UCSi_14/MUX21/U1_0/B (ND2_804)              0.00       7.24 r
+  add_i_10/U2/UCSi_14/MUX21/U1_0/U1/ZN (NAND2_X1)         0.03       7.28 f
+  add_i_10/U2/UCSi_14/MUX21/U1_0/Y (ND2_804)              0.00       7.28 f
+  add_i_10/U2/UCSi_14/MUX21/U3_0/A (ND2_796)              0.00       7.28 f
+  add_i_10/U2/UCSi_14/MUX21/U3_0/U1/ZN (NAND2_X1)         0.06       7.33 r
+  add_i_10/U2/UCSi_14/MUX21/U3_0/Y (ND2_796)              0.00       7.33 r
+  add_i_10/U2/UCSi_14/MUX21/Y[0] (MUX21_GENERIC_NBIT4_67)
+                                                          0.00       7.33 r
+  add_i_10/U2/UCSi_14/S[0] (CARRY_SEL_N_NBIT4_67)         0.00       7.33 r
+  add_i_10/U2/S[52] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_5)
+                                                          0.00       7.33 r
+  add_i_10/S[52] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_5)      0.00       7.33 r
+  add_i_11/A[52] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_4)      0.00       7.33 r
+  add_i_11/U2/A[52] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_4)
+                                                          0.00       7.33 r
+  add_i_11/U2/UCSi_14/A[0] (CARRY_SEL_N_NBIT4_51)         0.00       7.33 r
+  add_i_11/U2/UCSi_14/RCA1/A[0] (RCAN_NBIT4_102)          0.00       7.33 r
+  add_i_11/U2/UCSi_14/RCA1/FAI_1/A (FA_408)               0.00       7.33 r
+  add_i_11/U2/UCSi_14/RCA1/FAI_1/U4/Z (XOR2_X1)           0.05       7.39 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_1/U2/ZN (AOI22_X1)         0.06       7.45 r
+  add_i_11/U2/UCSi_14/RCA1/FAI_1/U1/ZN (INV_X1)           0.03       7.47 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_1/Co (FA_408)              0.00       7.47 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_2/Ci (FA_407)              0.00       7.47 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_2/U2/ZN (AOI22_X1)         0.06       7.53 r
+  add_i_11/U2/UCSi_14/RCA1/FAI_2/U1/ZN (INV_X1)           0.03       7.56 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_2/Co (FA_407)              0.00       7.56 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_3/Ci (FA_406)              0.00       7.56 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_3/U2/ZN (AOI22_X1)         0.06       7.62 r
+  add_i_11/U2/UCSi_14/RCA1/FAI_3/U1/ZN (INV_X1)           0.03       7.65 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_3/Co (FA_406)              0.00       7.65 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_4/Ci (FA_405)              0.00       7.65 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_4/U3/Z (XOR2_X1)           0.07       7.72 f
+  add_i_11/U2/UCSi_14/RCA1/FAI_4/S (FA_405)               0.00       7.72 f
+  add_i_11/U2/UCSi_14/RCA1/S[3] (RCAN_NBIT4_102)          0.00       7.72 f
+  add_i_11/U2/UCSi_14/MUX21/B[3] (MUX21_GENERIC_NBIT4_51)
+                                                          0.00       7.72 f
+  add_i_11/U2/UCSi_14/MUX21/U2_3/A (ND2_605)              0.00       7.72 f
+  add_i_11/U2/UCSi_14/MUX21/U2_3/U1/ZN (NAND2_X1)         0.03       7.75 r
+  add_i_11/U2/UCSi_14/MUX21/U2_3/Y (ND2_605)              0.00       7.75 r
+  add_i_11/U2/UCSi_14/MUX21/U3_3/B (ND2_601)              0.00       7.75 r
+  add_i_11/U2/UCSi_14/MUX21/U3_3/U1/ZN (NAND2_X1)         0.05       7.80 f
+  add_i_11/U2/UCSi_14/MUX21/U3_3/Y (ND2_601)              0.00       7.80 f
+  add_i_11/U2/UCSi_14/MUX21/Y[3] (MUX21_GENERIC_NBIT4_51)
+                                                          0.00       7.80 f
+  add_i_11/U2/UCSi_14/S[3] (CARRY_SEL_N_NBIT4_51)         0.00       7.80 f
+  add_i_11/U2/S[55] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_4)
+                                                          0.00       7.80 f
+  add_i_11/S[55] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_4)      0.00       7.80 f
+  add_i_12/A[55] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_3)      0.00       7.80 f
+  add_i_12/U1/A[55] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_3)
+                                                          0.00       7.80 f
+  add_i_12/U1/pgnetwork_0/A[55] (PG_network_NBIT64_3)     0.00       7.80 f
+  add_i_12/U1/pgnetwork_0/U14/Z (XOR2_X1)                 0.09       7.89 f
+  add_i_12/U1/pgnetwork_0/Pout[55] (PG_network_NBIT64_3)
+                                                          0.00       7.89 f
+  add_i_12/U1/pgblock1_1_28/A[1] (PG_block_163)           0.00       7.89 f
+  add_i_12/U1/pgblock1_1_28/U2/ZN (AOI21_X1)              0.05       7.94 r
+  add_i_12/U1/pgblock1_1_28/U1/ZN (INV_X1)                0.02       7.96 f
+  add_i_12/U1/pgblock1_1_28/PGout[0] (PG_block_163)       0.00       7.96 f
+  add_i_12/U1/pgblock1_2_14/A[0] (PG_block_146)           0.00       7.96 f
+  add_i_12/U1/pgblock1_2_14/U2/ZN (AOI21_X1)              0.05       8.01 r
+  add_i_12/U1/pgblock1_2_14/U1/ZN (INV_X1)                0.02       8.03 f
+  add_i_12/U1/pgblock1_2_14/PGout[0] (PG_block_146)       0.00       8.03 f
+  add_i_12/U1/pgblock1_3_7/A[0] (PG_block_138)            0.00       8.03 f
+  add_i_12/U1/pgblock1_3_7/U2/ZN (AOI21_X1)               0.05       8.08 r
+  add_i_12/U1/pgblock1_3_7/U1/ZN (INV_X1)                 0.03       8.11 f
+  add_i_12/U1/pgblock1_3_7/PGout[0] (PG_block_138)        0.00       8.11 f
+  add_i_12/U1/pgblock2_5_56_2/A[0] (PG_block_129)         0.00       8.11 f
+  add_i_12/U1/pgblock2_5_56_2/U2/ZN (AOI21_X1)            0.06       8.17 r
+  add_i_12/U1/pgblock2_5_56_2/U1/ZN (INV_X1)              0.02       8.19 f
+  add_i_12/U1/pgblock2_5_56_2/PGout[0] (PG_block_129)     0.00       8.19 f
+  add_i_12/U1/gblock2_6_14/A[0] (G_block_37)              0.00       8.19 f
+  add_i_12/U1/gblock2_6_14/U2/ZN (AOI21_X1)               0.05       8.24 r
+  add_i_12/U1/gblock2_6_14/U1/ZN (INV_X1)                 0.04       8.28 f
+  add_i_12/U1/gblock2_6_14/Gout (G_block_37)              0.00       8.28 f
+  add_i_12/U1/Co[14] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_3)
+                                                          0.00       8.28 f
+  add_i_12/U2/Ci[14] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_3)
+                                                          0.00       8.28 f
+  add_i_12/U2/UCSi_15/Ci (CARRY_SEL_N_NBIT4_34)           0.00       8.28 f
+  add_i_12/U2/UCSi_15/MUX21/SEL (MUX21_GENERIC_NBIT4_34)
+                                                          0.00       8.28 f
+  add_i_12/U2/UCSi_15/MUX21/UIV/A (IV_34)                 0.00       8.28 f
+  add_i_12/U2/UCSi_15/MUX21/UIV/U1/ZN (INV_X1)            0.05       8.33 r
+  add_i_12/U2/UCSi_15/MUX21/UIV/Y (IV_34)                 0.00       8.33 r
+  add_i_12/U2/UCSi_15/MUX21/U1_0/B (ND2_408)              0.00       8.33 r
+  add_i_12/U2/UCSi_15/MUX21/U1_0/U1/ZN (NAND2_X1)         0.03       8.36 f
+  add_i_12/U2/UCSi_15/MUX21/U1_0/Y (ND2_408)              0.00       8.36 f
+  add_i_12/U2/UCSi_15/MUX21/U3_0/A (ND2_400)              0.00       8.36 f
+  add_i_12/U2/UCSi_15/MUX21/U3_0/U1/ZN (NAND2_X1)         0.06       8.42 r
+  add_i_12/U2/UCSi_15/MUX21/U3_0/Y (ND2_400)              0.00       8.42 r
+  add_i_12/U2/UCSi_15/MUX21/Y[0] (MUX21_GENERIC_NBIT4_34)
+                                                          0.00       8.42 r
+  add_i_12/U2/UCSi_15/S[0] (CARRY_SEL_N_NBIT4_34)         0.00       8.42 r
+  add_i_12/U2/S[56] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_3)
+                                                          0.00       8.42 r
+  add_i_12/S[56] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_3)      0.00       8.42 r
+  add_i_13/A[56] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_2)      0.00       8.42 r
+  add_i_13/U2/A[56] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_2)
+                                                          0.00       8.42 r
+  add_i_13/U2/UCSi_15/A[0] (CARRY_SEL_N_NBIT4_18)         0.00       8.42 r
+  add_i_13/U2/UCSi_15/RCA1/A[0] (RCAN_NBIT4_36)           0.00       8.42 r
+  add_i_13/U2/UCSi_15/RCA1/FAI_1/A (FA_144)               0.00       8.42 r
+  add_i_13/U2/UCSi_15/RCA1/FAI_1/U4/Z (XOR2_X1)           0.05       8.47 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_1/U2/ZN (AOI22_X1)         0.06       8.53 r
+  add_i_13/U2/UCSi_15/RCA1/FAI_1/U1/ZN (INV_X1)           0.03       8.56 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_1/Co (FA_144)              0.00       8.56 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_2/Ci (FA_143)              0.00       8.56 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_2/U2/ZN (AOI22_X1)         0.06       8.62 r
+  add_i_13/U2/UCSi_15/RCA1/FAI_2/U1/ZN (INV_X1)           0.03       8.64 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_2/Co (FA_143)              0.00       8.64 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_3/Ci (FA_142)              0.00       8.64 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_3/U2/ZN (AOI22_X1)         0.06       8.71 r
+  add_i_13/U2/UCSi_15/RCA1/FAI_3/U1/ZN (INV_X1)           0.03       8.73 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_3/Co (FA_142)              0.00       8.73 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_4/Ci (FA_141)              0.00       8.73 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_4/U3/Z (XOR2_X1)           0.07       8.80 f
+  add_i_13/U2/UCSi_15/RCA1/FAI_4/S (FA_141)               0.00       8.80 f
+  add_i_13/U2/UCSi_15/RCA1/S[3] (RCAN_NBIT4_36)           0.00       8.80 f
+  add_i_13/U2/UCSi_15/MUX21/B[3] (MUX21_GENERIC_NBIT4_18)
+                                                          0.00       8.80 f
+  add_i_13/U2/UCSi_15/MUX21/U2_3/A (ND2_209)              0.00       8.80 f
+  add_i_13/U2/UCSi_15/MUX21/U2_3/U1/ZN (NAND2_X1)         0.03       8.83 r
+  add_i_13/U2/UCSi_15/MUX21/U2_3/Y (ND2_209)              0.00       8.83 r
+  add_i_13/U2/UCSi_15/MUX21/U3_3/B (ND2_205)              0.00       8.83 r
+  add_i_13/U2/UCSi_15/MUX21/U3_3/U1/ZN (NAND2_X1)         0.05       8.88 f
+  add_i_13/U2/UCSi_15/MUX21/U3_3/Y (ND2_205)              0.00       8.88 f
+  add_i_13/U2/UCSi_15/MUX21/Y[3] (MUX21_GENERIC_NBIT4_18)
+                                                          0.00       8.88 f
+  add_i_13/U2/UCSi_15/S[3] (CARRY_SEL_N_NBIT4_18)         0.00       8.88 f
+  add_i_13/U2/S[59] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_2)
+                                                          0.00       8.88 f
+  add_i_13/S[59] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_2)      0.00       8.88 f
+  add_i_14/A[59] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_1)      0.00       8.88 f
+  add_i_14/U1/A[59] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_1)
+                                                          0.00       8.88 f
+  add_i_14/U1/pgnetwork_0/A[59] (PG_network_NBIT64_1)     0.00       8.88 f
+  add_i_14/U1/pgnetwork_0/U10/Z (XOR2_X1)                 0.09       8.97 f
+  add_i_14/U1/pgnetwork_0/Pout[59] (PG_network_NBIT64_1)
+                                                          0.00       8.97 f
+  add_i_14/U1/pgblock1_1_30/A[1] (PG_block_35)            0.00       8.97 f
+  add_i_14/U1/pgblock1_1_30/U2/ZN (AOI21_X1)              0.05       9.02 r
+  add_i_14/U1/pgblock1_1_30/U1/ZN (INV_X1)                0.02       9.04 f
+  add_i_14/U1/pgblock1_1_30/PGout[0] (PG_block_35)        0.00       9.04 f
+  add_i_14/U1/pgblock1_2_15/A[0] (PG_block_19)            0.00       9.04 f
+  add_i_14/U1/pgblock1_2_15/U2/ZN (AOI21_X1)              0.05       9.09 r
+  add_i_14/U1/pgblock1_2_15/U1/ZN (INV_X1)                0.03       9.12 f
+  add_i_14/U1/pgblock1_2_15/PGout[0] (PG_block_19)        0.00       9.12 f
+  add_i_14/U1/pgblock2_4_60_4/A[0] (PG_block_6)           0.00       9.12 f
+  add_i_14/U1/pgblock2_4_60_4/U2/ZN (AOI21_X1)            0.05       9.17 r
+  add_i_14/U1/pgblock2_4_60_4/U1/ZN (INV_X1)              0.02       9.19 f
+  add_i_14/U1/pgblock2_4_60_4/PGout[0] (PG_block_6)       0.00       9.19 f
+  add_i_14/U1/pgblock2_5_60_2/A[0] (PG_block_2)           0.00       9.19 f
+  add_i_14/U1/pgblock2_5_60_2/U2/ZN (AOI21_X1)            0.05       9.25 r
+  add_i_14/U1/pgblock2_5_60_2/U1/ZN (INV_X1)              0.02       9.27 f
+  add_i_14/U1/pgblock2_5_60_2/PGout[0] (PG_block_2)       0.00       9.27 f
+  add_i_14/U1/gblock2_6_15/A[0] (G_block_2)               0.00       9.27 f
+  add_i_14/U1/gblock2_6_15/U2/ZN (AOI21_X1)               0.05       9.32 r
+  add_i_14/U1/gblock2_6_15/U1/ZN (INV_X1)                 0.04       9.36 f
+  add_i_14/U1/gblock2_6_15/Gout (G_block_2)               0.00       9.36 f
+  add_i_14/U1/Co[15] (CARRY_GENERATOR_NBIT64_NBIT_PER_BLOCK4_1)
+                                                          0.00       9.36 f
+  add_i_14/U2/Ci[15] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_1)
+                                                          0.00       9.36 f
+  add_i_14/U2/UCSi_16/Ci (CARRY_SEL_N_NBIT4_1)            0.00       9.36 f
+  add_i_14/U2/UCSi_16/MUX21/SEL (MUX21_GENERIC_NBIT4_1)
+                                                          0.00       9.36 f
+  add_i_14/U2/UCSi_16/MUX21/UIV/A (IV_1)                  0.00       9.36 f
+  add_i_14/U2/UCSi_16/MUX21/UIV/U1/ZN (INV_X1)            0.05       9.40 r
+  add_i_14/U2/UCSi_16/MUX21/UIV/Y (IV_1)                  0.00       9.40 r
+  add_i_14/U2/UCSi_16/MUX21/U1_3/B (ND2_9)                0.00       9.40 r
+  add_i_14/U2/UCSi_16/MUX21/U1_3/U1/ZN (NAND2_X1)         0.03       9.44 f
+  add_i_14/U2/UCSi_16/MUX21/U1_3/Y (ND2_9)                0.00       9.44 f
+  add_i_14/U2/UCSi_16/MUX21/U3_3/A (ND2_1)                0.00       9.44 f
+  add_i_14/U2/UCSi_16/MUX21/U3_3/U1/ZN (NAND2_X1)         0.02       9.46 r
+  add_i_14/U2/UCSi_16/MUX21/U3_3/Y (ND2_1)                0.00       9.46 r
+  add_i_14/U2/UCSi_16/MUX21/Y[3] (MUX21_GENERIC_NBIT4_1)
+                                                          0.00       9.46 r
+  add_i_14/U2/UCSi_16/S[3] (CARRY_SEL_N_NBIT4_1)          0.00       9.46 r
+  add_i_14/U2/S[63] (SUM_GEN_N_NBIT_PER_BLOCK4_NBLOCKS16_1)
+                                                          0.00       9.46 r
+  add_i_14/S[63] (P4_ADDER_NBIT64_NBIT_PER_BLOCK4_1)      0.00       9.46 r
+  Y[63] (out)                                             0.00       9.46 r
+  data arrival time                                                  9.46
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

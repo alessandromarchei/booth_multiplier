@@ -1,0 +1,40 @@
+HERE WE DESCRIBE COMMENTS, OBSERVATIONS AND ANALYSIS OF THE SYNTHESIS OF THE BOOTH'S MULTIPLIER.
+
+8 BIT SYNTHESIS : 
+	We observed that the synthesized file of the 8 bits multiplier is compliant to what we wanted to design, so we can consider it correct.
+	
+Question 5 : After we analyzed the 10 worst path delays, we noticed that they are all from input B[3] to output Y[15], but with different internal gates. For all of them the propagation delay is around 0.13 ns. We think that there are more identical paths inside the circuit that are quite similar in numerical delays, but here we just see some of them since we only analyzed the worst 10 paths. We expected that the worst paths end in Y[15], since the last stage inside the multiplier includes an adder (Pentium 4 Adder) and we know that the most critical part consists in generating carries.
+
+
+32 BIT SYNTHESIS : 
+     Although the complexity of the design now it is increased since we have 15 adders and 16 muxes and much more data parrallelism, we obtained again a result that corresponds to what we expected from the description.
+
+Question 6:
+	WITHOUT OPTIMIZATION :
+	
+	TIMING REPORT : 
+	From the timing report in the first case WITHOUT OPTIMIZATION, we obtained that the timing in the critical path has been of 9.46 time units, from A[0] to Y[63],as we expected. In fact it goes from the first bit of the factor A to the last bit of the product. This was easy to imagine since the signal has to travel through the chain of adders (15 of them) and the muxes, and this creates a lot of delays since is about the sum of the delays, from the first to the last one.
+
+	AREA REPORT :
+	From the area report we obtained a total of 25566 cells areas, which is a lot more compared to what we obtained in the previous cases. However, this is expected since the circuit involves many large submodules such as the adders.
+    Indeed, the number of sub-blocks such as adders and muxes are related to the number of bits of the input data of the multiplier: a multiplier with N-bit-input data requires (N/2)-1 adders and N/2 muxes.
+
+	WITH OPTIMIZATION (20% faster in the longest path):
+	
+	TIMING REPORT : 
+	Since the goal of the optimization was to speed up all the circuit by 20% with respect to the critical path of the previous one, we set the time constraint of 9.46ns * 0.8 = 7.57 ns. This was achieved by the synthetizer (with a null slack), but this time the longest path has changed, from B[0] to Y[63] (against the previous case when it was from A[0] to Y[63]). This means that probably the first part that goes from the first bits of the MULTIPLICAND A has been optimized (such as the sub module that executes all the shifts by one position to the left for every multiple of A), with a consequent change in the longest path, which is now starting from the MULTIPLIER B.
+
+	AREA REPORT :
+	After the optimization, we got as expected an increase in the total area of the circuit (from about 25566 to over 27000). This is because of the improvement regarding the time constraints we set.
+	
+Question 7 : After the synthesys with the script using the same timing constraint, we can observe that the circuit is very similar to the previous one that we optimized.
+
+
+Question 8 : After the optimization using the time constraint, we obtained that the critical path now is from B[1] to Y[60] and that is probably due to the optimization performed on the previous contstraint (from A[0] to Y[63]), since the longest path now is not from the maximum extremes of B and Y. 
+In order to obtain a lower delay, the optimized version was synthesized as follows.
+The multiplier is made up of 15 Pentium 4 adders, 16 muxes 5 to 1 and 16 encoders as expected. Moreover there are some gates, such as NAND, AND, INVERTER, NOR, OR, XNOR and a BUF to optimize the designed.
+Each ENCODER has been synthesized exploiting some complex gates, such as AOI (and-or-invert, 3 inputs-1output), OAI (or-and-invert, 3 inputs-1output) and OAI with 4 inputs, and some AND, NAND, INV gates.
+Each MUX 5 TO 1 has been synthesized using NAND, INV, NOR gates, some AND and NOR gates with 3 inputs, buffers and some complex gates, such as AOI with 3, 4 or 6 inputs. Moreover, some mux includes also a clock buffer (CLK BUF).
+Each P4 ADDER has been synthesized employing the SUM GENERATOR and CARRY GENERATOR blocks and some CLK BUF, BUF and inverter. Going into more details, the CARRY GENERATOR subpart is composed by G blocks (with AOI and INV gates), PG blocks (with (AOI, AND and INV gates), PG network (AND and XOR gates), some INV, NOR, OAI and AIO gates, BUF and CLK BUF, while the SUM GENERATOR sub-block is made up of carry select blocks, which include ripple carry adders (there are 2 RCA for each carry select block) and a MUX 2 to 1 (there is 1 mux for each carry select block, synthesized with NAND gates and inverter, adding some time a BUF and a CLK BUF).
+
+
